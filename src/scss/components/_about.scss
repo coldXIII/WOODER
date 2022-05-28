@@ -1,0 +1,37 @@
+section.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
+  .container {
+    width: 80%;
+    border: none;
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1 1 45rem;
+
+      .text-link {
+        margin-top: 1rem;
+
+        a:hover {
+          color: var(--brown);
+        }
+      }
+      .text-subtitle {
+        padding: 1rem;
+      }
+    }
+
+    .image {
+      flex: 1 1 45rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

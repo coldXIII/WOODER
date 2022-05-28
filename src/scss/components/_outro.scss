@@ -1,0 +1,82 @@
+.outro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/pile.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 80%;
+    padding: 2rem;
+    border: 1px solid $brown;
+
+    @media (max-width: 940px) {
+      padding: 1rem;
+    }
+
+    @media (max-width: 750px) {
+      width: 90%;
+      padding: 1rem;
+    }
+    @media (max-width: 450px) {
+      width: 90%;
+      padding: 0;
+    }
+
+    .text-title {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: $brown;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.5rem;
+    }
+    .text-title .title-line {
+      width: 6rem;
+      height: 0.13rem;
+      background: $gray;
+    }
+    .text {
+      .text-link {
+        margin-top: 2rem;
+
+        a {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          color: #fff;
+          border: 1px solid #fff;
+          padding: 0.3rem 1rem;
+
+          &:hover {
+            color: $brown;
+          }
+        }
+      }
+      .text-subtitle {
+        padding: 1rem 5rem;
+        color: #fff;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+      }
+
+      .number-box .number {
+        color: #fff;
+      }
+    }
+  }
+
+  .player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
